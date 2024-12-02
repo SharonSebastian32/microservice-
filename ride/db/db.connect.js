@@ -11,7 +11,7 @@ const connectDB = async () => {
 
   try {
     await mongoose.connect(process.env.MONGODB_URL, {});
-    console.log("User Service Connected to MongoDB successfully");
+    console.log("Ride Service Connected to MongoDB");
     mongoose.connection.on("connected", () => {
       console.log("MongoDB connection established");
     });
